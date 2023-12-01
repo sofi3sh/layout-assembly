@@ -1,0 +1,367 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2C2B2B;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.title-1{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #21062A;
+    margin-bottom: 50px;
+    position: relative;
+}
+.title-2{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    position: relative;
+}
+.title-1::after{
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #21062A;
+    position: absolute;
+    top: 20px;
+    margin-left: 20px;
+}
+.title-2::after{
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 20px;
+    margin-left: 20px;
+}
+/* стили для блока header */
+.header{
+    background-image: url('../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    margin-bottom: 200px;
+    min-height: 700px;
+}
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 47px 0 65px;
+}
+.phone{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.header__title{
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 107px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.header__subtitle{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.header__text{
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.header__link{
+    display: inline-block;
+    padding: 15px 55px;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #5A0D67;
+    margin-bottom: 70px;
+}
+/* .header__*/.icons{ 
+    margin-left: 66px;
+    padding-bottom: 120px;
+}
+/*header__*/.icons-img{
+    margin-right: 10px;
+}
+.header__img{
+    position: relative;
+}
+.header__img--block{
+    position: absolute;
+    width: 814px;
+    top: -270px;
+    right: 0;
+}
+
+/* Стили для блока "main-characteristics" */
+.main-characteristics{
+    margin-bottom: 100px;
+}
+.main-characteristics__inner{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.main-characteristics__block{
+    width: 160px;
+    text-align: center;
+}
+/* Стили для блока "product-description" */
+.product-description{
+    margin-bottom: 100px;
+    background-color: #21062A;
+}
+.product-description__text{
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+/* Стили для блока "mattress-base" */
+.mattress-base{
+    margin-bottom: 100px;
+}
+.mattress-base__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.mattress-base__box:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.mattress-base__img{
+    margin-right: 50px;
+}
+.mattress-base__box--title{
+    font-size: 24px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #21062A;
+    text-align: center;
+}
+
+/* Стили для блока "gallery" */
+.gallery{
+    padding: 20px 0;
+    margin-bottom: 100px;
+    /* background-color: #21062A; */
+}
+.gallery__item-link:hover{
+    background-color: #21062A;
+}
+.gallery__item-img{
+    width: 300px;
+    margin-bottom: 23px;
+    
+}
+.slick-slide img{
+    margin: 0 auto;
+}
+.gallery .slick-dots{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    list-style: none;
+}
+.gallery .slick-dots button{
+    font-size: 0;
+    border: none;
+    padding: 0;
+    margin: 0 10px;
+    width: 50px;
+    height: 1px;
+    background-color: #c4c4c4;
+}
+.gallery .slick-active button{
+    height: 3px;
+    background-color: #21062A;
+}
+
+/* Стили для блока footer */
+.footer{
+    background-color: #21062A;
+}
+.footer__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__icons{
+    margin: 0;
+    padding: 0;
+}
+.contacts{
+    color:#FFFFFF;
+}
+.footer__phone{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* АДАПТИВ */
+@media (max-width: 1000px){
+    .header{
+        margin-bottom: 60px;
+    }
+    .title-1, .title-2{
+        text-align: center;
+    }
+    .title-1::after,
+    .title-2::after{
+        display: none;
+    }
+    .header__top{
+        padding-bottom: 30px;
+    }
+    .header__title{
+        text-align: center;
+        font-size: 50px;
+        line-height: 80px;
+    }
+    .header__subtitle{
+        text-align: center;
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .header__text{
+        text-align: center;
+        line-height: 20px;
+    }
+    .header__link{
+        position: absolute;
+        top: 50px;
+        left: 33%;
+    }
+    .header__img--block{
+        width: 600px;
+        top: 0;
+        right: 20%;
+    }
+    .icons{
+        display: none;
+    }
+}
+@media (max-width: 860px){
+    .header{
+        min-height: 550px;
+    }
+    .header__title{
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .header__link{
+        padding: 10px 30px;
+        font-size: 10px;
+        line-height: 10px;
+        top: 60px;
+        left: 36%;
+    }
+    .phone{
+        font-size: 27px;
+    }
+    .header__subtitle{
+        font-size: 20px;
+    }
+    .header__text{
+        font-size: 12px;
+    }
+    .header__img--block{
+        width: 400px;
+        left: 27%;
+    }
+}
+@media (max-width: 630px){
+    .header{
+        min-height: 630px;
+    }
+    .header__top{
+        display: block;
+    }
+    .logo{
+        display: block;
+        text-align: center;
+    }
+    .phone{
+        display: block;
+        text-align: center;
+    }
+    .header__subtitle{
+        margin-bottom: 0;
+    }
+    .header__img--block{
+        width: 270px;
+        top: 10px;
+    }
+    .header__link{
+        top: 575px;
+    }
+    .product-description{
+        margin-bottom: 40px;
+    }
+    .mattress-base__box{
+        display: grid;
+    }
+    .mattress-base__img{
+        width: 200px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 400px){
+    .title-1, .title-2{
+        margin-bottom: 25px;
+    }
+    .header__title{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .header__subtitle{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .header__img--block{
+        left: 10%;
+    }
+    .header__link{
+        left: 26%;
+    }
+    .footer__box{
+        display: block;
+    }
+}

@@ -1,0 +1,128 @@
+@media(max-width: 860px){
+    .elements__shape{
+        display: none;
+    }
+    .elements__inner{
+        display: block;
+    }
+    .elements__item{
+        margin-bottom: 50px;
+    }
+    .elements__item-img{
+        margin-bottom: 10px;
+    }
+    .photo{
+        display: none;
+    }
+    .tourist__data{
+        margin: 0 auto;
+    }
+}
+@media(max-width: 800px){
+    .subheader__inner{
+        display: block;
+    }
+    .subheader__title{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .menu{
+        margin: 0 auto;
+    }
+    .subheader__menu{
+        justify-content: center;
+    }
+    .subheader__menu-link{
+        font-size: 12px;
+    }
+    .choose__inner{
+        flex-direction: column-reverse;
+    }
+    .choose__images{
+        max-width: none;
+        text-align: center;
+    }
+    .choose__img-2{
+        margin-left: 0;
+    }
+    .choose__title{
+        text-align: center;
+        margin: 50px 0;
+    }
+    .choose__description{
+        text-align: center;
+    }
+}
+
+@media(max-width: 560px){
+    .header__title {
+        font-size: 30px;
+        line-height: 16px;
+    }
+    .header__subtitle {
+        font-size: 16px;
+        line-height: 12px;
+        margin-bottom: 35px;
+    }
+    .header__form {
+        margin-bottom: 60px;
+    }
+    .header__form-input{
+        padding: 18px 40px;
+    }
+    .subheader__menu{
+        display: block;
+        text-align: center;
+    }
+    .subheader__menu-item {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .comments{
+        text-align: center;
+        padding: 50px 0 100px;
+    }
+    .comments__title{
+        margin-bottom: 50px;
+        font-size: 30px;
+        line-height: 20px;
+    }
+}
+
+@media(max-width: 410px){
+    .header__subtitle {
+        letter-spacing: 0;
+    }
+    .header__form-input{
+        padding: 18px 10px;
+    }
+    .header__form-btn{
+        padding: 14px 0;
+    }
+    .header__form-btn::after{
+        display: none;
+    }
+    .choose__img-1, 
+    .choose__img-2 {
+        width: 100%;
+        object-fit: cover;
+    }
+    .choose__title{
+        font-size: 30px;
+        line-height: 20px;
+    }
+    .country__link{
+        padding: 21px 30px;
+    }
+    .comments__title{
+        font-size: 24px;
+        line-height: 16px;
+    }
+    .tourist__data{
+        padding: 15px;
+    }
+    .tourist__comment{
+        font-size: 14px;
+        line-height: 22px;
+    }
+}

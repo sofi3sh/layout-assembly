@@ -1,0 +1,334 @@
+@font-face {
+    font-family: "FontAwesome";
+    src: url("../fonts/fa-regular-400.woff2") format("woff2"),
+        url("../fonts/fa-regular-400.ttf") format("truetype");
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none; /* Уберает подчеркивание под ссылкой */
+    color: inherit; /* Цвет наследуется от родительского класса */
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #E8E8E8;
+    letter-spacing: 1.6px;
+}
+.container{
+    max-width: 1140px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+/* Блок header */
+.header{
+    background-image: url(../images/header-bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 264px 0 215px 0;
+}
+.header__title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 26px;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 11px;
+}
+.header__subtitle{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 6.82px;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+}
+.header__form{
+    margin-bottom: 108px;
+    display: flex;
+    justify-content: center;
+}
+.header__form-input{
+    max-width: 653px;
+    padding: 19px 113px;
+    outline: none;
+    border: 2px solid #FFFFFF;
+}
+.header__form-input::placeholder{
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    color: #999999;
+}
+.header__form-btn{
+    position: relative;
+    width: 153px;
+    background: #5474FD;
+    border: 2px solid #FFFFFF;
+    padding: 13px 38px 14px 23px;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.header__form-btn::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/search.svg');
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+.header__btn{
+    border: none;
+    background-color: inherit;
+    letter-spacing: 2.8px;
+    color: #FFFFFF;
+    cursor: pointer;
+    position: relative;
+}
+.header__btn::after{
+    position: absolute;
+    content: '';
+    background-image: url('../images/aroow-down.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 17px;
+    height: 11px;
+    top: 21px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Блок subheader */
+.subheader{
+    
+    background: #5474FD;
+    padding: 31px 0;
+}
+.subheader__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subheader__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.subheader__menu{
+    display: flex;
+}
+.subheader__menu-item{
+    margin-right: 30px;
+}
+.subheader__menu-item:last-child{
+    margin-right: 0;
+}
+.subheader__menu-link{
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;   
+    color: #FFFFFF;
+}
+
+/* Блок choose */
+.choose{
+    background-image: url('../images/choose-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 117px 0;
+}
+.choose__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.choose__description{
+    max-width: 560px;
+}
+.choose__title{
+    font-family: 'Aleo', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+.choose__text{
+    margin-bottom: 45px;
+}
+.choose__link{
+    background: #496BFE;
+    padding: 21px 40px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.choose__images{
+    max-width: 440px;
+}
+.choose__img-2{
+    margin-left: 90px;
+}
+
+/* Блок elements */
+.elements{
+    position: relative;
+    background: #333333;
+    padding: 80px 0 97px;
+}
+.elements__inner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.elements__shape{
+    position: absolute;
+    top: 40px;
+}
+.elements__item{
+    text-align: center;
+    z-index: 2;
+    background: #333333;
+}
+.elements__item-img{
+    margin-bottom: 40px;
+}
+.elements__item-text{
+    font-family: 'Aleo', sans-serif;
+    font-size: 36px;
+    line-height: 26px;
+}
+
+/* Блок country */
+.country-1, .country-2{
+    padding: 227px 0 100px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.country-1{
+    background-image: url('../images/country-1.jpg');
+}
+.country-2{
+    background-image: url('../images/country-2.jpg');
+}
+.country__description{
+    max-width: 543px;
+    background-color: rgba(35, 35, 35, .9);
+    padding: 50px 32px;
+}
+.country__title{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+    margin-bottom: 22px;
+}
+.country__subtitle{
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+.country__text{
+    margin-bottom: 46px;
+}
+.country__link{
+    font-family: 'Aleo', sans-serif;
+    background: #5474FD;
+    padding: 21px 64px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.country-2 .country__description{
+    margin-left: auto;
+}
+
+/* Блок comments */
+.comments{
+    background-image: url('../images/tourists.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 128px 0 200px;
+}
+.comments__title{
+    font-family: 'Aleo', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 91px;
+}
+.comments__inner{
+    display: flex;
+}
+.photo{
+    width: 100%;
+    object-fit: cover;
+}
+.tourist__data{
+    max-width: 668px;
+    background: #333333;
+    padding: 49px 25px 35px 59px;
+}
+.tourist__name{
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FEFEFE;
+    margin-bottom: 23px;
+}
+.tourist__comment{
+    font-family: "FontAwesome";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    /* color: #5474FD; */
+}
+
+/* Блок footer */
+.footer{
+    background: #232323;
+    padding: 122px 0 53px;
+    text-align: center;
+}
+.footer__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 3.36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+.footer__subtitle{
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.footer__social-img{
+    margin: 0 30px;
+}
